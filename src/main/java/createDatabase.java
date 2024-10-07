@@ -4,10 +4,10 @@ public class createDatabase {
 
     public createDatabase() {
 
-        String db_url = "jdbc:sqlite:register_database.sqlite";
+        //String db_url = "jdbc:sqlite:register_database.sqlite";
 
         System.out.println("Creating database...");
-        try (Connection conn = DriverManager.getConnection(db_url);
+        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
              Statement stmt = conn.createStatement()) {
 
             System.out.println("Database created.");
