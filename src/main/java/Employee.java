@@ -10,13 +10,14 @@ public class Employee {
     private boolean clockedIn;
 
     //Creates employee object and saves their ID, first name, last name, and position
-    //Sets their clockedIn variable to false, in case this employee did not mean to log in
+    //Sets their clockedIn variable to false, so employees have a chance to clock in or not.
     public Employee(String ID, String firstName, String lastName, String position) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
         clockedIn = false;
+        System.out.println("Employee object created!");
     }
 
     //Method to return employee ID
