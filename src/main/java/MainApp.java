@@ -14,7 +14,8 @@ public class MainApp {
 
         else {
             System.out.println("Database present. Proceeding...");
-            new loginScreen();
+            //new loginScreen();
+            new loginScreenSUI();
         }
 
     }
