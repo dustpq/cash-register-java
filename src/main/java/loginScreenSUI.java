@@ -17,11 +17,13 @@ public class loginScreenSUI {
     private JButton numkey0;
     private JButton keyClear;
     private JButton keyOK;
-    private String idInput = "EMP";
+    private JLabel EMP_label;
+    private String idInput = "";
+    private final JFrame frame;
 
     public loginScreenSUI() {
 
-        JFrame frame = new JFrame();
+        frame = new JFrame();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setContentPane(panel);
         frame.pack();
@@ -62,17 +64,20 @@ public class loginScreenSUI {
 
     private void clear_idDisplay() {
 
-        idInput = "EMP";
+        idInput = "";
         idDisplay.setText(idInput);
 
     }
 
     private void tryLogin(String userID) {
 
-        System.out.println("Trying to login with ID: " + userID);
+        System.out.println("Trying to login with ID: " + "EMP" + userID);
 
-        if (loginManager.logIn(userID)) {
+        loginManager.logIn("EMP" + userID);
+
+        if (loginManager.isLoggedIn("EMP" + userID)) {
             System.out.println("Login successful.");
+            frame.dispose();
         }
 
         else {
