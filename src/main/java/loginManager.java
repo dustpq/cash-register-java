@@ -19,17 +19,16 @@ public class loginManager {
             for (Employee employee : loggedInEmployees) {
 
                 if (employee.getID().equals(newEmployee.getID())) {
-
                     System.out.println("Employee is logged in.");
+
 
                     if (employee.clockedIn()) {
                         System.out.println("Employee is clocked in, proceeding to main menu...");
-                        new mainMenu(employee);
+                        new simpleMenu(employee);
                     } else {
                         System.out.println("Employee is not clocked in, proceeding to clock in menu...");
                         new clockInMenu(employee);
                     }
-
                     return;
                 }
             }
@@ -37,9 +36,13 @@ public class loginManager {
             System.out.println("Employee not logged in, logging in now...");
             loggedInEmployees.add(newEmployee);
 
-            System.out.println("Employee is not clocked in, proceeding to clock in menu...");
-            new clockInMenu(newEmployee);
-
+            if (newEmployee.clockedIn()) {
+                System.out.println("Employee is clocked in, proceeding to main menu...");
+                new simpleMenu(newEmployee);
+            } else {
+                System.out.println("Employee is not clocked in, proceeding to clock in menu...");
+                new clockInMenu(newEmployee);
+            }
         } else {
             System.out.println("ERROR: ID is not valid.");
         }
