@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="3" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="449" height="287"/>
+      <xy x="20" y="20" width="459" height="287"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -41,7 +41,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="81468" class="javax.swing.JButton" binding="lettuceButton" default-binding="true">
+              <component id="81468" class="javax.swing.JButton" binding="blettuceButton">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -49,7 +49,7 @@
                   <text value="Lettuce"/>
                 </properties>
               </component>
-              <component id="bc747" class="javax.swing.JButton" binding="onionsButton" default-binding="true">
+              <component id="bc747" class="javax.swing.JButton" binding="bonionsButton">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -57,7 +57,7 @@
                   <text value="Onions"/>
                 </properties>
               </component>
-              <component id="9e6f1" class="javax.swing.JButton" binding="extraPattyButton" default-binding="true">
+              <component id="9e6f1" class="javax.swing.JButton" binding="bextraPattyButton">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -65,7 +65,7 @@
                   <text value="Extra Patty"/>
                 </properties>
               </component>
-              <component id="27386" class="javax.swing.JButton" binding="picklesButton" default-binding="true">
+              <component id="27386" class="javax.swing.JButton" binding="bpicklesButton">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -73,7 +73,7 @@
                   <text value="Pickles"/>
                 </properties>
               </component>
-              <component id="9227b" class="javax.swing.JButton" binding="tomatoButton" default-binding="true">
+              <component id="9227b" class="javax.swing.JButton" binding="btomatoButton">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -115,7 +115,7 @@
                   <text value="1/4 Pound Sausage"/>
                 </properties>
               </component>
-              <component id="dc49f" class="javax.swing.JButton" binding="ketchupButton1" default-binding="true">
+              <component id="dc49f" class="javax.swing.JButton" binding="hketchupButton">
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -123,7 +123,7 @@
                   <text value="Ketchup"/>
                 </properties>
               </component>
-              <component id="42bc2" class="javax.swing.JButton" binding="mustardButton1" default-binding="true">
+              <component id="42bc2" class="javax.swing.JButton" binding="hmustardButton1">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -131,7 +131,7 @@
                   <text value="Mustard"/>
                 </properties>
               </component>
-              <component id="43c2e" class="javax.swing.JButton" binding="mayoButton" default-binding="true">
+              <component id="43c2e" class="javax.swing.JButton" binding="hmayoButton">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -139,7 +139,7 @@
                   <text value="Mayo"/>
                 </properties>
               </component>
-              <component id="eab01" class="javax.swing.JButton" binding="onionsButton1" default-binding="true">
+              <component id="eab01" class="javax.swing.JButton" binding="honionsButton">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -147,7 +147,7 @@
                   <text value="Onions"/>
                 </properties>
               </component>
-              <component id="8b4d9" class="javax.swing.JButton" binding="relishButton" default-binding="true">
+              <component id="8b4d9" class="javax.swing.JButton" binding="hrelishButton">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -155,7 +155,7 @@
                   <text value="Relish"/>
                 </properties>
               </component>
-              <component id="c865" class="javax.swing.JButton" binding="picklesButton1">
+              <component id="c865" class="javax.swing.JButton" binding="hpicklesButton">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>

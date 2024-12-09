@@ -21,20 +21,20 @@ public class simpleMenu {
     private JLabel positionLabel;
     private JPanel burgerMenu;
     private JPanel hotdogMenu;
-    private JButton extraPattyButton;
-    private JButton lettuceButton;
-    private JButton onionsButton;
-    private JButton picklesButton;
-    private JButton tomatoButton;
+    private JButton bextraPattyButton;
+    private JButton blettuceButton;
+    private JButton bonionsButton;
+    private JButton bpicklesButton;
+    private JButton btomatoButton;
     private JButton bketchupButton;
     private JButton bmustardButton;
     private JButton sausageUpgradeButton;
-    private JButton ketchupButton1;
-    private JButton mustardButton1;
-    private JButton mayoButton;
-    private JButton relishButton;
-    private JButton onionsButton1;
-    private JButton picklesButton1;
+    private JButton hketchupButton;
+    private JButton hmustardButton1;
+    private JButton hmayoButton;
+    private JButton hrelishButton;
+    private JButton honionsButton;
+    private JButton hpicklesButton;
     private Timer timer;
     private DefaultListModel<Item> listModel;
 
@@ -81,6 +81,7 @@ public class simpleMenu {
 
     }
 
+    //handles clock display
     private void startClock() {
         timer = new Timer(1000, new ActionListener() {
             @Override
