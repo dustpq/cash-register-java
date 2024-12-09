@@ -60,6 +60,8 @@ public class createDatabase {
             stmt.execute(testUser);
 
             System.out.println("Finished successfully.");
+            System.out.println("Starting log in screen...");
+            new loginScreenSUI();
 
         } catch (SQLException e) {
 
