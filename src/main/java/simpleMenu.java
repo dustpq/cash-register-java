@@ -46,7 +46,7 @@ public class simpleMenu {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setContentPane(mainPanel);
-        frame.setSize(600,600);
+        frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
@@ -65,7 +65,7 @@ public class simpleMenu {
             CardLayout cl = (CardLayout) (foodView.getLayout());
             cl.show(foodView, "burgerMenu");
             Item burger = new Item("Burger");
-            listModel.addElement(burger);
+            //listModel.addElement(burger);
         });
 
         //hot dog button changes to hot dog menu
