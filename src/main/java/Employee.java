@@ -51,6 +51,7 @@ public class Employee {
 
     public void clockIn() {
         clockedIn = true;
+        System.out.println("Employee is now clocked in.");
     }
 
     public void clockOut() {

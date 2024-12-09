@@ -1,5 +1,3 @@
-import com.sun.tools.javac.Main;
-
 import javax.swing.*;
 
 public class clockInMenu {
@@ -39,7 +37,9 @@ public class clockInMenu {
     }
 
     public void clockIn(Employee e) {
-        new mainMenu(e);
+        //new mainMenu(e);
+        e.clockIn();
+        new simpleMenu(e);
     }
 
     public void exit() {
