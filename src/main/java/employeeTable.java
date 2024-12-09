@@ -10,7 +10,7 @@ public class employeeTable {
         try (Connection conn = DriverManager.getConnection(MainApp.db_url);
              PreparedStatement pstmt = conn.prepareStatement(checkID)) {
 
-            System.out.println("Connection established. Proceeding with ID validation...");
+            System.out.println("DB connected. Proceeding with ID validation...");
 
             pstmt.setString(1, id);
             ResultSet resultSet = pstmt.executeQuery();
@@ -41,7 +41,7 @@ public class employeeTable {
         try (Connection conn = DriverManager.getConnection(MainApp.db_url);
              PreparedStatement pstmt = conn.prepareStatement(getName)) {
 
-            System.out.println("Connection established. Proceeding with full name retrieval...");
+            System.out.println("DB connected. Proceeding with full name retrieval...");
 
             pstmt.setString(1, id);
             ResultSet resultSet = pstmt.executeQuery();
@@ -70,7 +70,7 @@ public class employeeTable {
         try (Connection conn = DriverManager.getConnection(MainApp.db_url);
              PreparedStatement pstmt = conn.prepareStatement(getName)) {
 
-            System.out.println("Connection established. Proceeding with first name retrieval...");
+            System.out.println("DB connected. Proceeding with first name retrieval...");
 
             pstmt.setString(1, id);
             ResultSet resultSet = pstmt.executeQuery();
@@ -99,7 +99,7 @@ public class employeeTable {
         try (Connection conn = DriverManager.getConnection(MainApp.db_url);
              PreparedStatement pstmt = conn.prepareStatement(getName)) {
 
-            System.out.println("Connection established. Proceeding with last name retrieval...");
+            System.out.println("DB connected. Proceeding with last name retrieval...");
 
             pstmt.setString(1, id);
             ResultSet resultSet = pstmt.executeQuery();
@@ -128,7 +128,7 @@ public class employeeTable {
         try (Connection conn = DriverManager.getConnection(MainApp.db_url);
              PreparedStatement pstmt = conn.prepareStatement(getPosition)) {
 
-            System.out.println("Connection established. Proceeding with position retrieval...");
+            System.out.println("DB connected. Proceeding with position retrieval...");
 
             pstmt.setString(1, id);
             ResultSet resultSet = pstmt.executeQuery();
