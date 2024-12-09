@@ -15,9 +15,9 @@ public class loginScreenSUI {
     private JButton numkey8;
     private JButton numkey9;
     private JButton numkey0;
+    private JLabel EMP_label;
     private JButton keyClear;
     private JButton keyOK;
-    private JLabel EMP_label;
     private String idInput = "";
     private final JFrame frame;
 
