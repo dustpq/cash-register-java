@@ -40,11 +40,18 @@ public class createDatabase {
                     )
                     """;
 
-            String testUser = """
+            String testManager = """
                     INSERT INTO employees
                     (id, first_name, last_name, position)
                     VALUES
                     ('EMP000','Test','Manager','Manager')
+                    """;
+
+            String testCashier = """
+                    INSERT INTO employees
+                    (id, first_name, last_name, position)
+                    VALUES
+                    ('EMP001','Test','Cashier','Cashier')
                     """;
 
             System.out.println("Creating employee table...");
@@ -56,8 +63,11 @@ public class createDatabase {
             System.out.println("Creating transactions table...");
             stmt.execute(transactions_table);
 
-            System.out.println("Creating test user...");
-            stmt.execute(testUser);
+            System.out.println("Creating test manager...");
+            stmt.execute(testManager);
+
+            System.out.println("Creating test cashier...");
+            stmt.execute(testCashier);
 
             System.out.println("Finished successfully.");
             System.out.println("Starting log in screen...");
