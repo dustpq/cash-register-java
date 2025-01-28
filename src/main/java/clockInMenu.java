@@ -30,7 +30,8 @@ public class clockInMenu {
         });
 
         exitButton.addActionListener(e -> {
-            new loginScreenSUI();
+            System.out.println("Exiting to log in screen...");
+            new loginScreen();
             frame.dispose();
         });
 
@@ -39,6 +40,7 @@ public class clockInMenu {
     public void clockIn(Employee e) {
         //new mainMenu(e);
         e.clockIn();
+        System.out.println("Starting menu as clocked in employee...");
         new simpleMenu(e);
     }
 

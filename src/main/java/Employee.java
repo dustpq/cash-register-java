@@ -43,7 +43,6 @@ public class Employee {
         return position;
     }
 
-
     //Set of methods to return and set clockedIn status
     public boolean clockedIn() {
         return clockedIn;

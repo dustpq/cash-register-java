@@ -71,7 +71,7 @@ public class createDatabase {
 
             System.out.println("Finished successfully.");
             System.out.println("Starting log in screen...");
-            new loginScreenSUI();
+            new loginScreen();
 
         } catch (SQLException e) {
 

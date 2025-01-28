@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class loginScreenSUI {
+public class loginScreen {
 
     private JPanel panel;
     private JLabel questionLabel;
@@ -21,7 +21,7 @@ public class loginScreenSUI {
     private String idInput = "";
     private final JFrame frame;
 
-    public loginScreenSUI() {
+    public loginScreen() {
 
         frame = new JFrame();
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

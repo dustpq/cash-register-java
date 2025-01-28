@@ -5,6 +5,6 @@ public class ItemDisplay {
     private JList list1;
     private JList list2;
 
-    public
+    //public
 
 }
