@@ -3,7 +3,7 @@ import javax.swing.*;
 public class loginScreen {
 
     private JPanel panel;
-    private JLabel questionLabel;
+    private JLabel prompt_label;
     private JTextField idDisplay;
     private JButton numkey1;
     private JButton numkey2;
