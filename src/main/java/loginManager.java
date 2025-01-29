@@ -24,7 +24,7 @@ public class loginManager {
 
                     if (employee.clockedIn()) {
                         System.out.println("Employee is clocked in, proceeding to main menu...");
-                        new simpleMenu(employee);
+                        new mainScreen(employee);
                     } else {
                         System.out.println("Employee is not clocked in, proceeding to clock in menu...");
                         new clockInMenu(employee);
@@ -38,7 +38,7 @@ public class loginManager {
 
             if (newEmployee.clockedIn()) {
                 System.out.println("Employee is clocked in, proceeding to main menu...");
-                new simpleMenu(newEmployee);
+                //new simpleMenu(newEmployee);
             } else {
                 System.out.println("Employee is not clocked in, proceeding to clock in menu...");
                 new clockInMenu(newEmployee);

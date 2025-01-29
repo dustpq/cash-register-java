@@ -38,10 +38,9 @@ public class clockInMenu {
     }
 
     public void clockIn(Employee e) {
-        //new mainMenu(e);
         e.clockIn();
         System.out.println("Starting menu as clocked in employee...");
-        new simpleMenu(e);
+        new mainScreen(e);
     }
 
     public void exit() {
