@@ -20,13 +20,11 @@ public class createDatabase {
                     position text NOT NULL
                     )""";
 
-            String inventory_table = """
-                    CREATE TABLE inventory (
+            String item_table = """
+                    CREATE TABLE items (
                     item_id text PRIMARY KEY,
                     item_name text NOT NULL,
-                    price text NOT NULL,
-                    stockAmount text NOT NULL,
-                    lastUpdated text NOT NULL
+                    price text NOT NULL
                     )
                     """;
 
@@ -36,7 +34,8 @@ public class createDatabase {
                     items text NOT NULL,
                     subtotal text NOT NULL,
                     total text NOT NULL,
-                    date text NOT NULL
+                    date text NOT NULL,
+                    time text NOT NULL
                     )
                     """;
 
@@ -57,8 +56,8 @@ public class createDatabase {
             System.out.println("Creating employee table...");
             stmt.execute(employee_table);
 
-            System.out.println("Creating inventory table...");
-            stmt.execute(inventory_table);
+            System.out.println("Creating item table...");
+            stmt.execute(item_table);
 
             System.out.println("Creating transactions table...");
             stmt.execute(transactions_table);
