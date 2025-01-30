@@ -20,6 +20,7 @@ public class loginScreen {
     private JButton keyOK;
     private String idInput = "";
     private final JFrame frame;
+    private final loginManager loginManagerInstance = new loginManager();
 
     public loginScreen() {
 
@@ -73,7 +74,7 @@ public class loginScreen {
 
         System.out.println("Trying to login with ID: " + "EMP" + userID);
 
-        loginManager.logIn("EMP" + userID);
+        loginManagerInstance.logIn("EMP" + userID);
 
         if (loginManager.isLoggedIn("EMP" + userID)) {
             System.out.println("Login successful.");
