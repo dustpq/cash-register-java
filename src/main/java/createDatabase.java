@@ -1,14 +1,12 @@
 import java.sql.*;
 
-public class createDatabase {
+public class createDatabase extends DatabaseHandling{
 
     public createDatabase() {
 
-        //String db_url = "jdbc:sqlite:register_database.sqlite";
-
         System.out.println("Creating database...");
-        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
-             Statement stmt = conn.createStatement()) {
+
+        try {
 
             System.out.println("Database created.");
 
@@ -54,19 +52,24 @@ public class createDatabase {
                     """;
 
             System.out.println("Creating employee table...");
-            stmt.execute(employee_table);
+            pstmt = conn.prepareStatement(employee_table);
+            pstmt.execute();
 
             System.out.println("Creating item table...");
-            stmt.execute(item_table);
+            pstmt = conn.prepareStatement(item_table);
+            pstmt.execute();
 
             System.out.println("Creating transactions table...");
-            stmt.execute(transactions_table);
+            pstmt = conn.prepareStatement(transactions_table);
+            pstmt.execute();
 
             System.out.println("Creating test manager...");
-            stmt.execute(testManager);
+            pstmt = conn.prepareStatement(testManager);
+            pstmt.execute();
 
             System.out.println("Creating test cashier...");
-            stmt.execute(testCashier);
+            pstmt = conn.prepareStatement(testCashier);
+            pstmt.execute();
 
             System.out.println("Finished successfully.");
             System.out.println("Starting log in screen...");
@@ -75,6 +78,7 @@ public class createDatabase {
         } catch (SQLException e) {
 
             System.out.println(e.getMessage());
+            System.out.println("ERROR: Could not create the database!");
 
         }
 

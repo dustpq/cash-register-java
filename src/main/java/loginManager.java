@@ -3,8 +3,9 @@ import java.util.ArrayList;
 public class loginManager {
 
     static ArrayList<Employee> loggedInEmployees = new ArrayList<>();
+    employeeTable employeeTable = new employeeTable();
 
-    public static void logIn(String id) {
+    public void logIn(String id) {
 
         if (employeeTable.isValidID(id)) {
 
@@ -38,7 +39,7 @@ public class loginManager {
 
             if (newEmployee.clockedIn()) {
                 System.out.println("Employee is clocked in, proceeding to main menu...");
-                //new simpleMenu(newEmployee);
+                new mainScreen(newEmployee);
             } else {
                 System.out.println("Employee is not clocked in, proceeding to clock in menu...");
                 new clockInMenu(newEmployee);

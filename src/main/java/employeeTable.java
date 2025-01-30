@@ -1,14 +1,14 @@
 import java.sql.*;
 
-public class employeeTable {
+public class employeeTable extends DatabaseHandling{
 
-    public static boolean isValidID(String id) {
+    public boolean isValidID(String id) {
 
         String checkID = "SELECT id FROM employees WHERE id = ?";
 
-        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
-             PreparedStatement pstmt = conn.prepareStatement(checkID)) {
+        try {
 
+            PreparedStatement pstmt = conn.prepareStatement(checkID);
             System.out.println("DB connected. Proceeding with ID validation...");
 
             pstmt.setString(1, id);
@@ -32,14 +32,14 @@ public class employeeTable {
 
     }
 
-    public static String getNameFromID(String id) {
+    public String getNameFromID(String id) {
 
         String getName = "SELECT first_name, last_name FROM employees WHERE id = ?";
         String employee_name = null;
 
-        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
-             PreparedStatement pstmt = conn.prepareStatement(getName)) {
+        try {
 
+            PreparedStatement pstmt = conn.prepareStatement(getName);
             System.out.println("DB connected. Proceeding with full name retrieval...");
 
             pstmt.setString(1, id);
@@ -61,14 +61,14 @@ public class employeeTable {
 
     }
 
-    public static String getFirstNameFromID(String id) {
+    public String getFirstNameFromID(String id) {
 
         String getName = "SELECT first_name FROM employees WHERE id = ?";
         String employee_name = null;
 
-        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
-             PreparedStatement pstmt = conn.prepareStatement(getName)) {
+        try  {
 
+            pstmt = conn.prepareStatement(getName);
             System.out.println("DB connected. Proceeding with first name retrieval...");
 
             pstmt.setString(1, id);
@@ -90,14 +90,14 @@ public class employeeTable {
 
     }
 
-    public static String getLastNameFromID(String id) {
+    public String getLastNameFromID(String id) {
 
         String getName = "SELECT last_name FROM employees WHERE id = ?";
         String employee_name = null;
 
-        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
-             PreparedStatement pstmt = conn.prepareStatement(getName)) {
+        try {
 
+            pstmt = conn.prepareStatement(getName);
             System.out.println("DB connected. Proceeding with last name retrieval...");
 
             pstmt.setString(1, id);
@@ -119,14 +119,14 @@ public class employeeTable {
 
     }
 
-    public static String getPositionFromID(String id) {
+    public String getPositionFromID(String id) {
 
         String getPosition = "SELECT position FROM employees WHERE id = ?";
         String position = null;
 
-        try (Connection conn = DriverManager.getConnection(MainApp.db_url);
-             PreparedStatement pstmt = conn.prepareStatement(getPosition)) {
+        try {
 
+            pstmt = conn.prepareStatement(getPosition);
             System.out.println("DB connected. Proceeding with position retrieval...");
 
             pstmt.setString(1, id);
